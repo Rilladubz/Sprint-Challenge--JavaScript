@@ -29,15 +29,36 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+        .foreach returns undefined while .map can return a value.  
 
 2. What is the difference between a function and a method?
+    A function is a function which can be used with anything while a method is a function specifically set with in a class constructor which can only be used by other objects inheriting its traits. 
 
 3. What is closure?
+    <!-- closure pertains to scope of functions written and tied together. 
+
+    function outter {
+        has access here
+        function inner{
+            also has access here
+
+        }
+
+        still in scope
+    } <<<
+        ^  
+        ^                    scope limit reached here after outter bracket is reached.  -->
+<!-- outter bracket -->
 
 4. Describe the four rules of the 'this' keyword.
-
+    1. if you're in the global scope this refers to the window.
+    2. when you're using dot notation this refers to what ever is being pointed at on its left. 
+    3. When utilizing a constructor function this refers to the particular instance of that function which is being 
+        declared/invoked.
+    4. if you're using .call or apply methods then you are using explicit binding.
 5. Why do we need super() in an extended class?
-
+    to tie attributed and methods together for specific purpose of inheritance delcaration. 
+    
 ## Project Set up
 
 Follow these steps to set up and work on your project:
