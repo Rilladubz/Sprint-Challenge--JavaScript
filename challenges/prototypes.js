@@ -16,20 +16,14 @@ function CuboidMaker(object) {
   this.height = object.height;
 }
 
-CuboidMaker.prototype.volume = function (length, width, height) {
-  return length * width * height;
+CuboidMaker.prototype.volume = function volume(length, width, height) {
+  return this.length * this.width * this.height;
 };
 
-CuboidMaker.prototype.surfaceArea = function (length, width, length, height, width, height) {
-  return 2 * (length * width + length * height + width * height)
+CuboidMaker.prototype.surfaceArea = function surfArea(length, width, length, height, width, height) {
+  return 2 * (this.length * this.width + this.length * this.height + this.width * this.height)
 };
 
-// function CharacterStats(characterStatsOptions) {
-//   CuboidMaker.call(this, characterStatsOptions);
-//   this.healthPoints = characterStatsOptions.healthPoints;
-// }
-
-// CuboidMaker.prototype = Object.create(cuboid.prototype);
 
 const cuboid = new CuboidMaker({
   length: 4,
@@ -63,7 +57,7 @@ const cuboid = new CuboidMaker({
 */
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
-console.log(cuboid.volume(10, 1, 4)); // 100
+console.log(cuboid.volume()); // 100
 console.log(cuboid.surfaceArea()); // 130
 
 
